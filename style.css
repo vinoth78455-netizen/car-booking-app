@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+body {
+    background-image: url("/static/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Glass effect */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
