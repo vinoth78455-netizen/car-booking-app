@@ -16,8 +16,8 @@
     {% for car in cars %}
     <div class="col-md-4">
         <div class="card shadow mb-4">
-            <img src="/static/{{ car|lower }}.jpg" class="card-img-top" height="200">
-
+            <img src="{{ url_for('static', filename=car|lower + '.jpg') }}" 
+     class="card-img-top" height="200">
             <div class="card-body text-center">
                 <h4>{{ car }}</h4>
                 <a href="/book/{{ car }}" class="btn btn-primary">Book Now</a>
